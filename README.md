@@ -17,4 +17,6 @@ MySQL
 
 1. start tdd work flow
 2. create Oauth account and login flow
-3. Plan
+3. plan homepage
+4. plan user data schema
+5. create backend
