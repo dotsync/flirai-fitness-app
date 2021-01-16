@@ -1,17 +1,18 @@
 # Technologies
 
 Frontend
-React
-CSS
+React readme=https://reactjs.org/docs/getting-started.html
 
 Testing
-Jest
-Enzyme
+Jest readme=https://jestjs.io/docs/en/tutorial-react
+Enzyme readme=https://enzymejs.github.io/enzyme/
+
+Security
+Helmet readme=https://www.npmjs.com/package/helmet
 
 Backend
-Express
-Node
-MySQL
+Express readme=https://expressjs.com/en/4x/api.html
+Node readme=https://nodejs.org/en/docs/
 
 # Roadmap
 
