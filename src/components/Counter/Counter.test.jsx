@@ -4,13 +4,13 @@ import React from 'react';
 
 // setup file
 import { shallow } from 'enzyme';
-import App from './App';
+import Counter from './Counter';
 
 describe('Counter Testing Suite', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<App />);
+    wrapper = shallow(<Counter />);
   });
 
   it('renders title of counter', () => {
