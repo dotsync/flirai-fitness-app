@@ -3,7 +3,8 @@ import './App.css';
 function App() {
 
   return (
-    <div>
+    <div className="App">
+      This is counter app
       {/* Header
         Routing/pages:
           1.
