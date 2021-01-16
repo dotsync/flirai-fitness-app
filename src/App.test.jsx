@@ -14,7 +14,7 @@ describe('Counter Testing Suite', () => {
 
   beforeEach(() => {
     wrapper = shallow(<App />);
-  }, 2000);
+  });
 
   it('renders title of counter', () => {
     expect(wrapper.find('h1').text()).toContain('This is a counter app');
@@ -24,5 +24,9 @@ describe('Counter Testing Suite', () => {
   });
   it('renders an initial value of state in a div', () => {
     expect(wrapper.find('#counter-value').text()).toBe('0');
+  });
+  it('renders the click event of increment button and increment couter value', () => {
+    wrapper.find('#increment-btn').simulate('click');
+    expect(wrapper.find('#counter-value').text()).toBe('1');
   });
 });
