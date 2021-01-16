@@ -25,8 +25,13 @@ describe('Counter Testing Suite', () => {
   it('renders an initial value of state in a div', () => {
     expect(wrapper.find('#counter-value').text()).toBe('0');
   });
-  it('renders the click event of increment button and increment couter value', () => {
+  it('renders the click event of increment button and counter value', () => {
     wrapper.find('#increment-btn').simulate('click');
     expect(wrapper.find('#counter-value').text()).toBe('1');
+  });
+  it('renders the click event of decrement button and counter value', () => {
+    wrapper.find('#increment-btn').simulate('click');
+    wrapper.find('#decrement-btn').simulate('click');
+    expect(wrapper.find('#counter-value').text()).toBe('0');
   });
 });
