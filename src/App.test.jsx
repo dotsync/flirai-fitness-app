@@ -23,6 +23,6 @@ describe('Counter Testing Suite', () => {
     expect(wrapper.find('#increment-btn').text()).toBe('Increment');
   });
   it('renders an initial value of state in a div', () => {
-    expect(wrapper.find('#counter-value').text()).toBe(0);
+    expect(wrapper.find('#counter-value').text()).toBe('0');
   });
 });
