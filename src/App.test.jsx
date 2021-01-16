@@ -3,11 +3,8 @@
 import React from 'react';
 
 // setup file
-import { configure, shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import { shallow } from 'enzyme';
 import App from './App';
-
-configure({ adapter: new Adapter() });
 
 describe('Counter Testing Suite', () => {
   let wrapper;
@@ -31,6 +28,7 @@ describe('Counter Testing Suite', () => {
   });
   it('renders the click event of decrement button and counter value', () => {
     wrapper.find('#increment-btn').simulate('click');
+    expect(wrapper.find('#counter-value').text()).toBe('1');
     wrapper.find('#decrement-btn').simulate('click');
     expect(wrapper.find('#counter-value').text()).toBe('0');
   });
