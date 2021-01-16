@@ -16,6 +16,6 @@ describe('Counter Testing Suite', () => {
   });
   it('renders a counter button', () => {
     const wrapper = shallow(<App />);
-    expect(wrapper.find('#increment-btn').text()).toBe('incrememnt');
+    expect(wrapper.find('#increment-btn').text()).toBe('Increment');
   });
 });
