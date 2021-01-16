@@ -10,12 +10,19 @@ import App from './App';
 configure({ adapter: new Adapter() });
 
 describe('Counter Testing Suite', () => {
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(<App />);
+  }, 2000);
+
   it('renders title of counter', () => {
-    const wrapper = shallow(<App />);
     expect(wrapper.find('h1').text()).toContain('This is a counter app');
   });
   it('renders a counter button', () => {
-    const wrapper = shallow(<App />);
     expect(wrapper.find('#increment-btn').text()).toBe('Increment');
+  });
+  it('renders an initial value of state in a div', () => {
+    expect(wrapper.find('#counter-value').text()).toBe('0');
   });
 });
