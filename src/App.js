@@ -3,14 +3,8 @@ import './App.css';
 function App() {
 
   return (
-    <div className="App">
-      This is counter app
-      {/* Header
-        Routing/pages:
-          1.
-          2.
-          3.
-      */}
+    <div className="app">
+      <h1>This is a counter app</h1>
     </div>
   );
 }

@@ -10,9 +10,6 @@ configure({ adapter: new Adapter() });
 describe('Counter Testing Suite', () => {
   test('Renders title of counter', () => {
     const wrapper = shallow(<App />)
-    console.log(wrapper.debug());
-    render(<App />);
-    const linkElement = screen.getByText('This is counter app');
-    expect(linkElement).toBeInTheDocument();
+    expect(wrapper.find('h1').text()).toContain('This is a counter app')
   });
 });
