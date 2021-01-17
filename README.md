@@ -105,6 +105,8 @@ See the [open issues](https://github.com/dotsync/flirai-fitness-app/issues) for 
 3. plan homepage
 4. plan user data schema
 5. create backend
+6. Setup routing
+7. create nav bar
 
 
 
