@@ -10,10 +10,6 @@ describe('Navbar Test Suite', () => {
   beforeEach(() => {
     wrapper = shallow(<Navbar />);
   });
-
-  test('should have a navbar', () => {
-    expect(wrapper.find('.navbar').text()).toContain('navbar');
-  });
   test('should have a logo', () => {
     expect(wrapper.find('.logo').text()).toContain('flirai');
   });
@@ -22,8 +18,5 @@ describe('Navbar Test Suite', () => {
   });
   test('should have a player score', () => {
     expect(wrapper.find('.navbar-options').text()).toContain('player score');
-  });
-  test('renders an initial value of state in a div', () => {
-    expect(wrapper.find('.player-score-value').text()).toBe('0');
   });
 });
