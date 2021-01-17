@@ -12,6 +12,6 @@ describe('Navbar Test Suite', () => {
   });
 
   test('should have a title', () => {
-    expect(wrapper.find('#navbar').text()).toContain('navbar');
+    expect(wrapper.find('.navbar').text()).toContain('navbar');
   });
 });

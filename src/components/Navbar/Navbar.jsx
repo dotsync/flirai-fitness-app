@@ -1,8 +1,9 @@
 import React from 'react';
+import './Navbar.css';
 
 export default function Navbar() {
   return (
-    <div id="navbar">
+    <div className="navbar">
       navbar
     </div>
   );
