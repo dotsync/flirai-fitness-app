@@ -1,6 +1,9 @@
-h1 {
-  color: maroon;
+body {
+  font-family: 'Open Sans Condensed';
+  padding: 20px 60px;
 }
-.para {
-  color: blue;
+
+a {
+  text-decoration: none;
+  color: black;
 }
