@@ -1,0 +1,24 @@
+.login-form {
+  background-color: cornsilk;
+}
+h2 {
+  text-align: center;
+}
+.login-submit {
+  width: 100%;
+}
+.login-signup {
+  width: 100%;
+  text-align: center;
+  margin-top: 2px;
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.login-container {
+  width: 100%;
+  max-width: 400px;
+}
