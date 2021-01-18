@@ -11,12 +11,34 @@ export default function Signup() {
             email
             <input
               name="email"
-              type="text"
+              type="email"
               id="email"
               required
             />
           </label>
+          <label htmlFor="password">
+            Password
+            <input
+              name="password"
+              type="password"
+              id="password"
+              required
+            />
+          </label>
+          <label htmlFor="password-confirm">
+            Password Confirmation
+            <input
+              name="password-confirm"
+              type="password"
+              id="password-confirm"
+              required
+            />
+          </label>
+          <button className="signup-submit" type="submit">Submit</button>
         </form>
+      </div>
+      <div className="signup-login">
+        Already have an account? Log in
       </div>
     </div>
   );

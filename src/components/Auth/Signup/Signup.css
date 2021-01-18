@@ -1,0 +1,14 @@
+.signup-form {
+  background-color: cornsilk;
+}
+h2 {
+  text-align: center;
+}
+.signup-submit {
+  width: 100%;
+}
+.signup-login {
+  width: 100%;
+  text-align: center;
+  margin-top: 100;
+}
