@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './Dashboard.css';
 import { Link, useHistory } from 'react-router-dom';
+import Alert from '@material-ui/lab/Alert';
 import { useAuth } from '../../../contexts/AuthContext';
 
 export default function Dashboard() {
@@ -23,7 +24,7 @@ export default function Dashboard() {
     <div>
       <div className="user-profile">
         <h2>Profile</h2>
-        {error && alert(error)}
+        {error && <Alert severity="error">{error}</Alert>}
         <strong>Email:</strong>
         {currentUser.email}
       </div>

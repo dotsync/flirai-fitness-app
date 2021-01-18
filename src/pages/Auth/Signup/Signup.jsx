@@ -3,6 +3,7 @@
 import './Signup.css';
 import React, { useRef, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
+import Alert from '@material-ui/lab/Alert';
 import { useAuth } from '../../../contexts/AuthContext';
 
 export default function Signup() {
@@ -38,7 +39,7 @@ export default function Signup() {
       <div className="signup-container">
         <div className="signup-form">
           <h2>Sign Up</h2>
-          {error && alert(error)}
+          {error && <Alert severity="error">{error}</Alert>}
           <form onSubmit={handleSubmit}>
             <label htmlFor="email">
               email
