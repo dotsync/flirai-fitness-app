@@ -7,7 +7,7 @@
   background-color: bisque;
 }
 
-.logo {
+.navbar-logo {
   height: 100%;
   width: 70px;
   padding: 25px;
@@ -21,6 +21,6 @@
   justify-content: flex-end;
 }
 
-.player-score {
+.navbar-player-score {
   padding: 10px 15px;
 }
