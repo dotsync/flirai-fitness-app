@@ -9,7 +9,7 @@ export default function Navbar() {
         flirai
       </Link>
       <div className="navbar-options">
-        <Link className="navbar-signin" to="/login">signin</Link>
+        <Link className="navbar-signin" to="/login">login</Link>
         <div className="navbar-player-score">
           player score
         </div>
