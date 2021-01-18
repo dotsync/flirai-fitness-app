@@ -3,6 +3,7 @@ import './ExerciseCard.css';
 
 const DUMMY_EXERCISE_CARD = {
   title: 'Endurance Swim',
+  subject: 'Swim',
   description: 'A continuos easy-paced swim to develop your endurance',
   time: 90,
   Complete: true,

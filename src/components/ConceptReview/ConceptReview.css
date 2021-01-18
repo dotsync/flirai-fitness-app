@@ -1,0 +1,14 @@
+/* Remove extra left and right margins, due to padding in columns */
+.concept-review-row {
+  width: 100%;
+  display: grid;
+  grid-row-gap: 50px;
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.concept-review-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
