@@ -4,9 +4,10 @@ import Signup from '../../components/Auth/Signup/Signup';
 
 export default function Login() {
   return (
-    <div className="login">
-      login
-      <Signup />
+    <div className="login-page">
+      <div className="signup-container">
+        <Signup />
+      </div>
     </div>
   );
 }
