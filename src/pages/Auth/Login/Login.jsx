@@ -1,9 +1,67 @@
-import React from 'react';
+/* eslint-disable consistent-return */
+/* eslint-disable no-unused-vars */
+import './Login.css';
+import React, { useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useAuth } from '../../../contexts/AuthContext';
 
 export default function Login() {
+  const emailRef = useRef();
+  const passwordRef = useRef();
+  const { signup, currentUser } = useAuth();
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    try {
+      setError('');
+      // if loading, disable submit button
+      setLoading(true);
+      await signup(emailRef.current.value, passwordRef.current.value);
+    } catch {
+      setError('Failed to create an account');
+    }
+    setLoading(false);
+  }
+
   return (
-    <div>
-      hello from login
+    <div className="login">
+      <div className="login-container">
+        <div className="login-form">
+          <h2>Log In</h2>
+          {error && alert(error)}
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="email">
+              email
+              <input
+                name="email"
+                type="email"
+                id="email"
+                required
+                ref={emailRef}
+              />
+            </label>
+            <label htmlFor="password">
+              Password
+              <input
+                name="password"
+                type="password"
+                id="password"
+                required
+                ref={passwordRef}
+              />
+            </label>
+            <button className="login-submit" type="submit" disabled={loading}>Login</button>
+          </form>
+        </div>
+        <div className="login-signup">
+          Need an account?
+          {' '}
+          <Link to="/signup">Sign up</Link>
+        </div>
+      </div>
     </div>
   );
 }
