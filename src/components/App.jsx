@@ -6,6 +6,7 @@ import { AuthProvider } from '../contexts/AuthContext';
 import Signup from '../pages/Auth/Signup/Signup';
 import Login from '../pages/Auth/Login/Login';
 import Dashboard from '../pages/Auth/Dashboard/Dashboard';
+import PrivateRoute from './PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         <AuthProvider>
           <Navbar />
           <Switch>
-            <Route exact path="/" component={Dashboard} />
+            <PrivateRoute exact path="/" component={Dashboard} />
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
           </Switch>
