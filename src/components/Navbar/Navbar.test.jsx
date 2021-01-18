@@ -11,10 +11,10 @@ describe('Navbar Test Suite', () => {
     wrapper = shallow(<Navbar />);
   });
   test('should have a logo', () => {
-    expect(wrapper.find('.logo').text()).toContain('flirai');
+    expect(wrapper.find('.navbar-logo').text()).toContain('flirai');
   });
   test('should have options container for links and search', () => {
-    expect(wrapper.find('.navbar-options').text()).toContain('')
+    expect(wrapper.find('.navbar-options').text()).toContain('');
   });
   test('should have a player score', () => {
     expect(wrapper.find('.navbar-options').text()).toContain('player score');
