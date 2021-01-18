@@ -35,6 +35,7 @@ export default function Signup() {
       <div className="signup-container">
         <div className="signup-form">
           <h2>Sign Up</h2>
+          {error && alert(error)}
           <form onSubmit={handleSubmit}>
             <label htmlFor="email">
               email
