@@ -60,7 +60,6 @@ export default function Login() {
         </div>
         <div className="login-signup">
           Need an account?
-          {' '}
           <Link to="/signup">Sign up</Link>
         </div>
       </div>
