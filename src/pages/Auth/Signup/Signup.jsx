@@ -1,26 +1,27 @@
 /* eslint-disable consistent-return */
 /* eslint-disable no-unused-vars */
-import React, { useRef, useState } from 'react';
 import './Signup.css';
+import React, { useRef, useState } from 'react';
 import { useAuth } from '../../../contexts/AuthContext';
 
 export default function Signup() {
   const emailRef = useRef();
   const passwordRef = useRef();
   const passwordConfirmRef = useRef();
-  const { signup, currentUser } = useAuth();
+  const { signup } = useAuth();
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(e) {
     e.preventDefault();
-
+    // validation checks
     if (passwordRef.current.value !== passwordConfirmRef.current.value) {
+      // exit because error
       return setError('Passwords do not match');
     }
-
     try {
       setError('');
+      // if loading, disable submit button
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
     } catch {
