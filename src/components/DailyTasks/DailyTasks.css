@@ -1,0 +1,9 @@
+/* Remove extra left and right margins, due to padding in columns */
+.daily-task-row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.daily-tasks-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

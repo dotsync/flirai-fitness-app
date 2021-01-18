@@ -1,14 +1,11 @@
 import React from 'react';
-import ExerciseCard from '../../components/ExerciseCard/ExerciseCard';
+import './Homepage.css';
+import DailyTasks from '../../components/DailyTasks/DailyTasks';
 
 export default function Homepage() {
   return (
-    <div>
-      <h1>HOME PAGE</h1>
-      <ExerciseCard name="name" />
-      <ExerciseCard />
-      <ExerciseCard />
-      <ExerciseCard />
+    <div className="home-page">
+      <DailyTasks />
     </div>
   );
 }
