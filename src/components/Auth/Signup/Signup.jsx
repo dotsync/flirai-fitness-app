@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import './Signup.css';
 
 export default function Signup() {
+  const emailRef = useRef();
+  const passwordRef = useRef();
+  const passwordConfirmRef = useRef();
   return (
     <div className="signup">
       <div className="signup-form">
@@ -14,6 +17,7 @@ export default function Signup() {
               type="email"
               id="email"
               required
+              ref={emailRef}
             />
           </label>
           <label htmlFor="password">
@@ -23,6 +27,7 @@ export default function Signup() {
               type="password"
               id="password"
               required
+              ref={passwordRef}
             />
           </label>
           <label htmlFor="password-confirm">
@@ -32,6 +37,7 @@ export default function Signup() {
               type="password"
               id="password-confirm"
               required
+              ref={passwordConfirmRef}
             />
           </label>
           <button className="signup-submit" type="submit">Submit</button>
