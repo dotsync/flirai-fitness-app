@@ -16,7 +16,4 @@ describe('Counter Testing Suite', () => {
   test('renders a title', () => {
     expect(wrapper.find('h2').text()).toContain('Sign Up');
   });
-  test('renders a form', () => {
-    expect(wrapper.find('form')).exists();
-  });
 });
