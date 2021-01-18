@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import './Signup.css';
 import React, { useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useAuth } from '../../../contexts/AuthContext';
 
 export default function Signup() {
@@ -71,7 +72,8 @@ export default function Signup() {
           </form>
         </div>
         <div className="signup-login">
-          Already have an account? Log in
+          Already have an account?
+          <Link to="/login">Log in</Link>
         </div>
       </div>
     </div>
