@@ -1,13 +1,13 @@
 /* eslint-disable no-undef */
 import React from 'react';
 import { shallow } from 'enzyme';
-import FlashCard from './FlashCard';
+import Flashcard from './Flashcard';
 
 describe('Flashcard Component Test Suite', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<FlashCard />);
+    wrapper = shallow(<Flashcard />);
   });
 
   test('should have a title', () => {

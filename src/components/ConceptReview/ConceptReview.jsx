@@ -1,18 +1,17 @@
 import React from 'react';
 import './ConceptReview.css';
-import FlashCard from '../FlashCard/FlashCard';
 import UserStatistics from '../UserStatistics/UserStatistics';
+import FlashcardsList from '../FlashcardsList/FlashcardsList';
+import CreateFlashcard from '../CreateFlashcard/CreateFlashcard';
 
 export default function ConceptReview() {
   return (
     <div className="concept-review-row">
       <UserStatistics />
       <div className="flashcards-col">
-        <FlashCard />
-        <FlashCard />
-        <FlashCard />
-        <FlashCard />
+        <FlashcardsList />
       </div>
+      <CreateFlashcard />
     </div>
   );
 }
