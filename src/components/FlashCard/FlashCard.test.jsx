@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable no-unused-vars */
 /* eslint-disable max-len */
 /* eslint-disable no-undef */
@@ -17,12 +18,12 @@ describe('Flashcard Component Test Suite', () => {
     amountOfFlips: '0',
   };
   describe('It renders without a flashcard prop', () => {
-    // test('It renders loading message', () => {
-    //   const component = shallow(<Flashcard />)
-    //   console.log(component.debug())
-    //   const wrapper = component.find('div')
-    //   expect(wrapper.text()).toBe('no flashcard passed');
-    // });
+    test('It renders loading message', () => {
+      const component = shallow(<Flashcard />);
+      // console.log(component.debug());
+      wrapper = component.find('div');
+      expect(wrapper.text()).toBe('loading');
+    });
   });
   // setup
   const setUp = (props = {}) => {
