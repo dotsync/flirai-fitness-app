@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable no-else-return */
 /* eslint-disable react/prop-types */
@@ -21,25 +22,28 @@ export default function Flashcard({ myFlashcards }) {
       { _id: myFlashcards._id })
       .then((data) => {
         console.log(data);
-        // console.log('FLASHCARDS FROM DELETE CLIENT SHOULD BE ONE LESS', data)
       })
       .catch((err) => {
         console.log(err);
       });
-    // console.log('u clicked removed for this id', myFlashcards._id)
+  };
+  const handleRevealAnswerFlashcard = () => {
+    console.log('REVEAL ANSWER BUTN CLICKED!');
   };
 
   return !myFlashcards ? <div>loading</div> : (
-    <div className="flashcard-container">
-      <div className="flashcard">
-        <div className="flashcard-header">
-          <h3>{myFlashcards.catagory}</h3>
-          <h5>{myFlashcards.subject}</h5>
+    <div id="flashcard-container">
+      <div id="flashcard">
+        <div id="flashcard-header">
+          <h3 id="flashcard-catagory">{myFlashcards.catagory}</h3>
+          <h5 id="flashcard-subject">{myFlashcards.subject}</h5>
+          <h6 id="flashcard-topic">{myFlashcards.topic}</h6>
         </div>
-        <div className="flashcard-body">
-          <div>{myFlashcards.question}</div>
+        <div id="flashcard-body">
+          <div id="flashcard-question">{myFlashcards.question}</div>
         </div>
-        <button type="submit" onClick={handleRemoveFlashcard}>delete</button>
+        <button id="flashcard-delete-btn" type="submit" onClick={handleRemoveFlashcard}>delete</button>
+        <button id="flashcard-answer-btn" type="submit" onClick={handleRevealAnswerFlashcard}>reveal</button>
       </div>
     </div>
   );

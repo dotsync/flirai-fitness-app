@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  border-radius: 5%;
 }
 
 body {
@@ -7,14 +8,14 @@ body {
 }
 
 /* Float four columns side by side */
-.flashcard-container {
+#flashcard-container {
   float: left;
   width: 25%;
   padding: 0 10px;
 }
 
 /* Style the counter cards */
-.flashcard {
+#flashcard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
@@ -22,13 +23,13 @@ body {
   min-height: 400px;
   margin-bottom: 20px;
 }
-.flashcard-answer {
+#flashcard-answer {
   text-align: left;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
-  .flashcard-container {
+  #flashcard-container {
     width: 100%;
     display: block;
     margin-bottom: 20px;
