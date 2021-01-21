@@ -7,14 +7,14 @@ body {
 }
 
 /* Float four columns side by side */
-.container {
+.exercisecard-container {
   float: left;
   width: 25%;
   padding: 0 10px;
 }
 
 /* Style the counter cards */
-.card {
+.exercisecard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
@@ -23,7 +23,7 @@ body {
 
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
-  .container {
+  .exercisecard-container {
     width: 100%;
     display: block;
     margin-bottom: 20px;

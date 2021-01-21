@@ -12,15 +12,15 @@ const DUMMY_EXERCISE_CARD = {
 
 export default function ExerciseCard({ exerciseCard }) {
   return !exerciseCard ? <div className="loading">loading</div> : (
-    <div className="container">
-      <div className="card">
-        <div className="card-title">
+    <div className="exercisecard-container">
+      <div className="exercisecard">
+        <div className="exercisecard-title">
           <h2><b>{DUMMY_EXERCISE_CARD.title}</b></h2>
         </div>
-        <div className="card-description">
+        <div className="exercisecard-description">
           <p>{DUMMY_EXERCISE_CARD.description}</p>
         </div>
-        <div className="card-details">
+        <div className="exercisecard-details">
           <h3>Time(minutes)</h3>
           <p>{DUMMY_EXERCISE_CARD.time}</p>
           <h3>Effort</h3>
