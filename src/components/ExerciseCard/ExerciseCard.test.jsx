@@ -5,7 +5,11 @@ import ExerciseCard from './ExerciseCard';
 
 describe('ExerciseCard component test suite', () => {
   const testCard = {
-
+    title: 'Endurance Swim',
+    subject: 'Swim',
+    description: 'A continuos easy-paced swim to develop your endurance',
+    time: 90,
+    Complete: true,
   };
 
   const setUp = (props = {}) => {
