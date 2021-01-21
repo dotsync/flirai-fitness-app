@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import './ExerciseCard.css';
 
@@ -9,8 +10,8 @@ const DUMMY_EXERCISE_CARD = {
   Complete: true,
 };
 
-export default function ExerciseCard() {
-  return (
+export default function ExerciseCard({ exerciseCard }) {
+  return !exerciseCard ? <div className="loading">loading</div> : (
     <div className="container">
       <div className="card">
         <div className="card-title">

@@ -6,15 +6,6 @@ import React from 'react';
 import './Flashcard.css';
 import axios from 'axios';
 
-// const DUMMY_FLASH_CARD = {
-//   title: 'Flashcard',
-//   subject: 'Data Structures and',
-//   topic: 'LinkedList',
-//   question: 'What is 1 plus 1?',
-//   answerOptions: [1, 2, 3, 4],
-//   answer: 2,
-// };
-
 export default function Flashcard({ myFlashcards }) {
   const handleRemoveFlashcard = () => {
     // console.log('myFlashcards.length', myFlashcards.length)
