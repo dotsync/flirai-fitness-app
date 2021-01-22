@@ -39,3 +39,21 @@ export default function Flashcard({ myFlashcards }) {
     </div>
   );
 }
+/*
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+RECURSION
+What is an execution context and how does it relate to recursion?
+->An execution context contains the variables within each ruecrisve function call.
+-->Separate recursive calls each have their own variables stored in their own execution context.
+When analyzing the Big O runtime of recursive functions, we count the ____.
+->relationship of input to function calls.
+What is the purpose of the base case in a recursive function?
+->In the base case, there is no recursive function call.
+Recursion is typically more efficient than iteration.
+->False
+A function will not recurse if the __ is reached.A function will not recurse if the __ is reached.
+->Base case
+*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*
+ASYMPTOTIC NOTATION?
+
+*/
