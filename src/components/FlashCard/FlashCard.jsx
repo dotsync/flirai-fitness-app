@@ -22,7 +22,7 @@ export default function Flashcard({ myFlashcards }) {
     console.log('REVEAL ANSWER BUTN CLICKED!');
   };
 
-  return !myFlashcards ? <div>loading</div> : (
+  return !myFlashcards ? <div>loading flashcard</div> : (
     <div id="flashcard-container">
       <div id="flashcard">
         <div id="flashcard-header">
