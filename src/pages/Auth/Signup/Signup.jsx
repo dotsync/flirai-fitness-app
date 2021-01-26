@@ -74,10 +74,10 @@ export default function Signup() {
             </label>
             <button className="signup-submit" type="submit" disabled={loading}>Submit</button>
           </form>
-        </div>
-        <div className="signup-login">
-          Already have an account?
-          <Link to="/login">Log in</Link>
+          <div className="signup-login">
+            Already have an account?
+            <Link to="/login">Log in</Link>
+          </div>
         </div>
       </div>
     </div>

@@ -19,6 +19,8 @@ h2 {
   min-height: 100vh;
 }
 .login-container {
-  width: 100%;
   max-width: 400px;
+}
+.login-forgot-password {
+  text-align: center;
 }

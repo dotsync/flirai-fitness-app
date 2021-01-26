@@ -22,5 +22,11 @@
 }
 
 .navbar-player-score {
-  padding: 10px 15px;
+  padding: 10px;
+}
+.navbar-signin {
+  padding: 10px;
+}
+.navbar-dashboard {
+  padding: 10px 15px 10px 10px;
 }

@@ -59,13 +59,13 @@ export default function Login() {
             </label>
             <button className="login-submit" type="submit" disabled={loading}>Login</button>
           </form>
-        </div>
-        <div className="forgot-password">
-          <Link to="/forgot-password">Forgot Password?</Link>
-        </div>
-        <div className="login-signup">
-          Need an account?
-          <Link to="/signup">Sign up</Link>
+          <div className="login-forgot-password">
+            <Link to="/forgot-password">Forgot Password?</Link>
+          </div>
+          <div className="login-signup">
+            Need an account?
+            <Link to="/signup">Sign up</Link>
+          </div>
         </div>
       </div>
     </div>

@@ -56,10 +56,10 @@ export default function ForgotPassword() {
             </button>
           </form>
         </div>
-        <div className="login">
+        <div className="forgot-password-login">
           <Link to="/login">Login</Link>
         </div>
-        <div className="login-signup">
+        <div className="forgot-password-signup">
           Need an account?
           <Link to="/signup">Sign up</Link>
         </div>
