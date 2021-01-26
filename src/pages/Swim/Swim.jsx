@@ -5,6 +5,7 @@ export default function Swim() {
   const DUMMY_EXERCISE_CARD = {
     // reducer(accumulator, currentValue){ accumulator + currentValue;},
     title: 'Swim',
+    _id: 1,
     description: 'An easy swim workout with drills to focuse on technique',
     cardImage: '../../../public/static/images/cards/poolside.jpg',
     cardImageTitle: 'Swimming pool',

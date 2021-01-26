@@ -1,3 +1,4 @@
+/* eslint-disable no-underscore-dangle */
 /* eslint-disable react/prop-types */
 import React from 'react';
 import './ExerciseCard.css';
@@ -46,8 +47,8 @@ export default function ExerciseCard({ exerciseCard }) {
   };
 
   return !exerciseCard ? <div className="loading">loading exercise card</div> : (
-    <div className="exerciseCard-container">
-      <Card className="exerciseCard">
+    <div className="exercise-card-container">
+      <Card className="exercise-card">
         <CardHeader
           avatar={(
             <Avatar
@@ -101,15 +102,6 @@ export default function ExerciseCard({ exerciseCard }) {
           <CardContent>
             <Typography variant="body2" color="textSecondary" component="p">
               Drills
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              <ul>
-                {exerciseCard.drills.type.map((drill, i) => (
-                  <li key={`drill${i + 1}`}>
-                    {drill}
-                  </li>
-                ))}
-              </ul>
             </Typography>
           </CardContent>
         </Collapse>
