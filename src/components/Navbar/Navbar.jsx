@@ -9,9 +9,6 @@ export default function Navbar() {
         flirai
       </Link>
       <div className="navbar-options">
-        <div className="navbar-signin">
-          <Link to="/login">login</Link>
-        </div>
         <div className="navbar-dashboard">
           <Link to="/dashboard">dashboard</Link>
         </div>
