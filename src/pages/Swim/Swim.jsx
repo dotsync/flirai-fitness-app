@@ -38,6 +38,8 @@ export default function Swim() {
   return (
     <div>
       <ExerciseCard exerciseCard={DUMMY_EXERCISE_CARD} />
+      <ExerciseCard exerciseCard={DUMMY_EXERCISE_CARD} />
+      <ExerciseCard exerciseCard={DUMMY_EXERCISE_CARD} />
     </div>
   );
 }
