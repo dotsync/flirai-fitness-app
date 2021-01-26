@@ -27,7 +27,7 @@ export default function Signup() {
       // if loading, disable submit button
       setLoading(true);
       await signup(emailRef.current.value, passwordRef.current.value);
-      history.push('/');
+      history.push('/dashboard');
     } catch {
       setError('Failed to create an account');
     }
