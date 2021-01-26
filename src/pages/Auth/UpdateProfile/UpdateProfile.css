@@ -1,0 +1,21 @@
+.update-profile-form {
+  background-color: cornsilk;
+}
+.update-profile-submit {
+  width: 100%;
+}
+.update-profile-login {
+  width: 100%;
+  text-align: center;
+  margin-top: 2px;
+}
+.update-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.update-profile-container {
+  width: 100%;
+  max-width: 400px;
+}
