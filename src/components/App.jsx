@@ -5,6 +5,7 @@ import Navbar from './Navbar/Navbar';
 import { AuthProvider } from '../contexts/AuthContext';
 import Signup from '../pages/Auth/Signup/Signup';
 import Login from '../pages/Auth/Login/Login';
+import ForgotPassword from '../pages/Auth/ForgotPassword/ForgotPassword';
 import Dashboard from '../pages/Auth/Dashboard/Dashboard';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import Homepage from '../pages/Homepage/Homepage';
@@ -20,6 +21,7 @@ function App() {
             <Route path="/home" component={Homepage} />
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
+            <Route path="/forgot-password" component={ForgotPassword} />
           </Switch>
         </AuthProvider>
       </Router>
