@@ -4,21 +4,23 @@ import ExerciseCard from '../../components/ExerciseCard/ExerciseCard';
 export default function Swim() {
   const DUMMY_EXERCISE_CARD = {
     // reducer(accumulator, currentValue){ accumulator + currentValue;},
-    title: 'Endurance Swim',
-    subject: 'Swim',
-    description: 'A continuos easy-paced swim to develop your endurance',
+    title: 'Swim',
+    description: 'An easy swim workout with drills to focuse on technique',
+    cardImage: '../../../public/static/images/cards/poolside.jpg',
+    cardImageTitle: 'Swimming pool',
     totalDistance: 1300,
+    totalTime: 60,
     unit: 'meters',
     warmup: {
       type: ['freestyle'],
       amount: 100,
     },
     drills: {
-      type: ['3stroke-6kick, fist, catch-up, zipper'],
+      type: ['3stroke-6kick', 'fist', 'catch-up', 'zipper'],
       amount: 50,
     },
     mainset: {
-      type: 'Endurance Swim',
+      type: 'Technique Swim',
       repetitions: [100, 200, 300, 400],
       sets: 4,
       perceivedExertion: 4,
@@ -34,7 +36,6 @@ export default function Swim() {
   };
   return (
     <div>
-      swim
       <ExerciseCard exerciseCard={DUMMY_EXERCISE_CARD} />
     </div>
   );

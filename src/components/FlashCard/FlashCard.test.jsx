@@ -22,7 +22,7 @@ describe('Flashcard Component Test Suite', () => {
       const component = shallow(<Flashcard />);
       // console.log(component.debug());
       wrapper = component.find('div');
-      expect(wrapper.text()).toBe('loading');
+      expect(wrapper.text()).toBe('loading flashcard');
     });
   });
   // setup props
