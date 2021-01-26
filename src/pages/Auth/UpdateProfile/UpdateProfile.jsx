@@ -68,7 +68,7 @@ export default function UpdateProfile() {
                 type="password"
                 id="password"
                 ref={passwordRef}
-                placeHolder="Leave blank to keep the same"
+                placeholder="Leave blank to keep the same"
               />
             </label>
             <label htmlFor="password-confirm">
@@ -78,7 +78,7 @@ export default function UpdateProfile() {
                 type="password"
                 id="password-confirm"
                 ref={passwordConfirmRef}
-                placeHolder="Leave blank to keep the same"
+                placeholder="Leave blank to keep the same"
               />
             </label>
             <button className="update-profile-submit" type="submit" disabled={loading}>Submit</button>

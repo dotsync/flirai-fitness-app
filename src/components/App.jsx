@@ -8,8 +8,9 @@ import Login from '../pages/Auth/Login/Login';
 import ForgotPassword from '../pages/Auth/ForgotPassword/ForgotPassword';
 import Dashboard from '../pages/Auth/Dashboard/Dashboard';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
-import Homepage from '../pages/Homepage/Homepage';
 import UpdateProfile from '../pages/Auth/UpdateProfile/UpdateProfile';
+import Homepage from '../pages/Homepage/Homepage';
+import Swim from '../pages/Swim/Swim';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Switch>
             <PrivateRoute exact path="/dashboard" component={Dashboard} />
             <PrivateRoute path="/update-profile" component={UpdateProfile} />
+            <PrivateRoute path="/swim" component={Swim} />
             <Route path="/home" component={Homepage} />
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
