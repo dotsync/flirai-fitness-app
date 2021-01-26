@@ -22,6 +22,7 @@ export default function Login() {
       // if loading, disable submit button
       setLoading(true);
       await login(emailRef.current.value, passwordRef.current.value);
+      // successful login goes to dashboard
       history.push('/dashboard');
     } catch {
       setError('Failed to sign in');
