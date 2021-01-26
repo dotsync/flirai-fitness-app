@@ -9,7 +9,7 @@ import { useAuth } from '../../../contexts/AuthContext';
 export default function Login() {
   const emailRef = useRef();
   const passwordRef = useRef();
-  const { login } = useAuth();
+  const { login, currentUser } = useAuth();
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const history = useHistory();
@@ -45,6 +45,7 @@ export default function Login() {
                 id="email"
                 required
                 ref={emailRef}
+                defaultValue="test@test.com"
               />
             </label>
             <label htmlFor="password">
@@ -55,6 +56,7 @@ export default function Login() {
                 id="password"
                 required
                 ref={passwordRef}
+                defaultValue="123456"
               />
             </label>
             <button className="login-submit" type="submit" disabled={loading}>Login</button>
