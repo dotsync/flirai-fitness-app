@@ -11,11 +11,13 @@ export default function Dashboard() {
   const history = useHistory();
 
   async function handleLogout() {
+    // clear error
     setError('');
     try {
       await logout();
       history.push('/login');
     } catch {
+      // set error failed to logout
       setError('Failed to log out');
     }
   }
@@ -25,7 +27,7 @@ export default function Dashboard() {
       <div className="user-profile">
         <h2>Profile</h2>
         {error && <Alert severity="error">{error}</Alert>}
-        <strong>Email:</strong>
+        <strong>Email: </strong>
         {currentUser.email}
       </div>
       <Link to="/update-profile" className="update-profile">
