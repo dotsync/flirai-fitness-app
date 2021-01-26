@@ -10,7 +10,7 @@ const DUMMY_EXERCISE_CARD = {
   Complete: true,
 };
 
-export default function ExerciseCard({ exerciseCard = DUMMY_EXERCISE_CARD }) {
+export default function ExerciseCard({ exerciseCard }) {
   return !exerciseCard ? <div className="loading">loading exercise card</div> : (
     <div className="exercisecard-container">
       <div className="exercisecard">
