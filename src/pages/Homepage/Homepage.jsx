@@ -1,14 +1,17 @@
 import React from 'react';
 import './Homepage.css';
-import DailyTasks from '../../components/DailyTasks/DailyTasks';
-import ConceptReview from '../../components/ConceptReview/ConceptReview';
 
 export default function Homepage() {
   return (
     <div className="home-page">
-      <DailyTasks />
-      <br />
-      <ConceptReview />
+      <a-scene background="color: midnightblue">
+        <a-box
+          color="#F5C85D"
+          position="0 0 -5"
+          rotation="33 45 0"
+          scale="2 1 2"
+        />
+      </a-scene>
     </div>
   );
 }
