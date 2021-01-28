@@ -11,6 +11,7 @@ import PrivateRoute from './PrivateRoute/PrivateRoute';
 import UpdateProfile from '../pages/Auth/UpdateProfile/UpdateProfile';
 import Homepage from '../pages/Homepage/Homepage';
 import Swim from '../pages/Swim/Swim';
+import StrandedVR from '../pages/StrandedVR/StrandedVR';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <PrivateRoute exact path="/dashboard" component={Dashboard} />
             <PrivateRoute path="/update-profile" component={UpdateProfile} />
             <PrivateRoute path="/swim" component={Swim} />
+            <PrivateRoute path="/StrandedVR" component={StrandedVR} />
             <Route path="/home" component={Homepage} />
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
