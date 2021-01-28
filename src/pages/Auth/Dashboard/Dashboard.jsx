@@ -14,6 +14,7 @@ export default function Dashboard() {
     // clear error
     setError('');
     try {
+      // await logout
       await logout();
       history.push('/login');
     } catch {
@@ -24,17 +25,18 @@ export default function Dashboard() {
 
   return (
     <div>
-      <div className="user-profile">
+      <div>
         <h2>Profile</h2>
         {error && <Alert severity="error">{error}</Alert>}
         <strong>Email: </strong>
         {currentUser.email}
-      </div>
-      <Link to="/update-profile" className="update-profile">
-        Update Profile
-      </Link>
-      <div className="signout-from-dash">
-        <button type="submit" onClick={handleLogout}>Logout</button>
+        <br />
+        <Link to="/update-profile">
+          Update Profile
+        </Link>
+        <div>
+          <button type="submit" onClick={handleLogout}>Logout</button>
+        </div>
       </div>
     </div>
   );

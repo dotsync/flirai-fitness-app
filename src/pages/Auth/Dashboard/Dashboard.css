@@ -1,14 +1,19 @@
 .user-profile {
   border: 3px solid black;
 }
-.update-profile {
+
+.dashboard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.dashboard-container {
   width: 100%;
-  margin-top: 3px;
+  max-width: 400px;
 }
 .signout-from-dash {
   width: 100%;
-  text-align: center;
-  margin-top: 20px;
 }
 h2 {
   text-align: center;
